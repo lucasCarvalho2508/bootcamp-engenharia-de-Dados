@@ -9,12 +9,19 @@ __pycache__/
 .env
 .env.*
 !.env.example
+.envrc
 
 # Airflow
 logs/
 airflow.db
 airflow.cfg
 webserver_config.py
+
+# DuckDB and generated ETL data
+*.duckdb
+*.duckdb.wal
+data/generated/
+data/processed/
 
 # Test and build artifacts
 .pytest_cache/
@@ -23,3 +30,9 @@ htmlcov/
 build/
 dist/
 *.egg-info/
+
+# Local editor and operating system files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
